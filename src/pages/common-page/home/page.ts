@@ -23,7 +23,7 @@ export class HomePage {
     //获取Home信息
     this.configService.getHome().subscribe(
       data=>{
-        //处理请求
+        //处理请求ddddd
       }
     );
 
