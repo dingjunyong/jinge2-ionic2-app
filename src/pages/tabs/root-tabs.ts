@@ -1,6 +1,6 @@
 
 
-import { HomePage } from './../common-page/home/page';
+import { HomePage } from '../common-page/home/page';
 import { Component } from '@angular/core';
 
 
@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
       <ion-tab [root]="tab5Root" tabTitle="我的" tabIcon="person"></ion-tab>
     </ion-tabs>
 `})
-export class RootTabsPage {
+export class RootTab {
   // this tells the tabs component which Pages
   // should be each tab's root Page
   tab1Root: any = HomePage;

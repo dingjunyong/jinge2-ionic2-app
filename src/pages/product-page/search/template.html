@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar placeholder="搜索 延时，持久到底!"></ion-searchbar>
+    <ion-buttons text-right start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">取消</span>
+        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="hot-searchterms">
+    <button ion-button color="dark" clear (click)="goSearch({keyword: searchTerm.Keyword})"
+            *ngFor="let searchTerm of hotSearchTerms">{{searchTerm.Keyword}}</button>
+  </div>
+
+</ion-content>

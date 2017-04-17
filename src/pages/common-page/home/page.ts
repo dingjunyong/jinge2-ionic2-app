@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { ModalController,NavController } from 'ionic-angular';
 import {ConfigService} from "../../../services/config.service";
+import {ProductSearchPage} from "../../product-page/search/page";
 
 @Component({
   templateUrl: 'template.html',
@@ -28,6 +29,10 @@ export class HomePage {
     );
 
     //获取推荐的产品
+  }
+
+  goSearchPage(){
+     this.modalCtrl.create(ProductSearchPage).present();
   }
 
 

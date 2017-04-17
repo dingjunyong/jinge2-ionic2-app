@@ -33,6 +33,12 @@ export class TabKeyword{
   Link:string;
 }
 
+export class SearchTerm{
+  Id:number;
+  Keyword:string;
+  Count:number;
+}
+
 
 
 
