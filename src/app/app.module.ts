@@ -5,10 +5,12 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { AboutPage } from '../pages/application-page/about/page';
-import { ContactPage } from '../pages/application-page/contact/page';
-import { HomePage } from '../pages/application-page/home/page';
+import { AboutPage } from '../pages/common-page/about/page';
+import { ContactPage } from '../pages/common-page/contact/page';
+import { HomePage } from '../pages/common-page/home/page';
 import { RootTabsPage } from '../pages/tabs/root-tabs';
+import {HttpService} from "../services/http.service";
+import {StorageService} from "../services/storage.service";
 
 
 
@@ -38,6 +40,6 @@ import { RootTabsPage } from '../pages/tabs/root-tabs';
     HomePage,
     RootTabsPage,
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [HttpService,StorageService,{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}

@@ -1,6 +1,6 @@
 
 
-import { HomePage } from './../application-page/home/page';
+import { HomePage } from './../common-page/home/page';
 import { Component } from '@angular/core';
 
 
